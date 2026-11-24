@@ -8,26 +8,26 @@
 </head>
 <body>
 <h1>Privacy policy</h1>
-<p>Last updated: 2026-11-22</p>
+<p>Last updated: 2026-11-24</p>
 <h2>What the app accesses</h2>
 <p>With the user's permission, My Calendar uses these Google API scopes:</p>
 <ul>
 <li>calendar.calendarlist.readonly: read the list of calendars</li>
 <li>calendar.settings.readonly: read calendar settings (week start, time zone)</li>
 <li>calendar.events: read, create, edit, and delete calendar events</li>
-<li>tasks: read tasks and mark them complete</li>
+<li>tasks: read, create, edit, and delete tasks, and mark them complete</li>
 </ul>
 <h2>How data is used and stored</h2>
 <ul>
 <li>Calendar and task data is used only to display and edit it in the app on the user's own Mac.</li>
-<li>Event and task data is kept in memory while the app runs and is not written to disk by the app.</li>
+<li>To show the calendar quickly at launch, the app keeps a copy of recently viewed calendar data (calendar list, events and tasks) on the user's Mac, encrypted with a key kept in the macOS Keychain. This copy is replaced with fresh data from Google each time the app opens, and it is deleted when the app's Google sign-in ends (for example, after access is revoked).</li>
 <li>The sign-in token is stored on the user's Mac, encrypted with a key kept in the macOS Keychain.</li>
 <li>The app talks only to Google's servers. It has no server of its own, and it sends no data to the developer or to any third party.</li>
 <li>No data is sold, shared, or used for advertising.</li>
 </ul>
 <p>My Calendar's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <h2>Removing access</h2>
-<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Signing out in the app deletes the stored token.</p>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After access is revoked, the app deletes the stored token and the cached calendar copy the next time it tries to reach Google.</p>
 <h2>Contact</h2>
 <p>Questions: open an issue in this site's GitHub repository.</p>
 </body>
